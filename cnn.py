@@ -54,7 +54,7 @@ model.add(Conv2D(64, (3, 3), activation='relu'))
 # 建立池化層，池化大小=2x2，取最大值
 model.add(MaxPooling2D(pool_size=(2, 2)))
 # Dropout層隨機斷開輸入神經元，用於防止過度擬合，斷開比例:0.25
-model.add(Dropout(0.25))
+# model.add(Dropout(0.25))
 # Flatten層把多維的輸入一維化，常用在從卷積層到全連接層的過渡。
 model.add(Flatten())
 # 全連接層: 128個output
