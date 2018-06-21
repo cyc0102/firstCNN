@@ -60,7 +60,7 @@ model.add(Flatten())
 # 全連接層: 128個output
 model.add(Dense(128, activation='relu'))
 # Dropout層隨機斷開輸入神經元，用於防止過度擬合，斷開比例:0.5
-model.add(Dropout(0.5))
+# model.add(Dropout(0.5))
 # 使用 softmax activation function，將結果分類
 model.add(Dense(num_classes, activation='softmax'))
 
